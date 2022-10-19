@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>食載 - 飲食迷思 - 謝榮益所架設</title>
+  <link rel="stylesheet" href="./page2Style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+    <span class="word">加 載 中</span>
+  </div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+    <a class="navbar-brand" href="index.html"><img src="https://github.com/2021Hackthon/logo1/blob/gh-pages/logo.png?raw=true
+" height="50px">
+      <span class="iconname">食載</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="page1.html">食物放大鏡</a>
+        </li>
+        <li class="nav-item">
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="color:orange" data-toggle="dropdown">
+            飲食迷思
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#select1">迷思大哉問</a>
+            <a class="dropdown-item" href="#select2">隔夜菜迷思</a>
+            <a class="dropdown-item" href="#select3">素食需知</a>
+          </div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="page3.html">用藥安全</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!--  RWD網站排版  -->
+  <div class="container">
+    <section id="s3">
+      <div class="title">
+        飲食迷思
+        <div class="con">
+          <a href="#select1" style="color:red"><i class="fa fa-plus-square" id="plus"></i></a>
+          <a href="#select2" style="color:red"><i class="fa fa-plus-square" id="plus"></i></a>
+          <a href="#select3" style="color:red"><i class="fa fa-plus-square" id="plus"></i></a>
+        </div>
+      </div>
+
+      <div class="select" id="select1">
+        <h1 style="font-weight:800">迷思大哉問</h1>
+        <!--   問題1   -->
+        <div class="quiz">
+          <div class="quiz quiz1" id="quiz1">
+            <h3 style="font-weight:600">1. 您通常將菜餚保存多久呢?</h3>
+
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-8">
+                <form><br>
+                  <input type="radio" name="ans1" value="1" id="ans1"><label for="ans1">a. 從不保存，當天就解決！</label><br>
+                  <input type="radio" name="ans1" value="1" id="ans2"><label for="ans2">b. 最多就隔天，超過就丟垃圾桶</label><br>
+                  <input type="radio" name="ans1" value="0" id="ans3"><label for="ans3">c. 3-4天</label><br>
+                </FORM>
+              </div>
+
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2" id="sub1">
+                <a href="" data-toggle="modal" data-target="#myModal1">
+                  <button class="subbtn">送出</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!--   問題2   -->
+        <div class="quiz">
+          <div class="quiz quiz2" id="quiz2" style="display:none">
+            <h3 style="font-weight:600">2. 您會將熱食直接放到冰箱裡嗎？</h3>
+
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-8">
+                <form><br>
+                  <input type="radio" name="ans2" value="1" id="ans4"><label for="ans4">a. 夏天食物沒吃完會快點放冰箱
+                  </label><br>
+                  <input type="radio" name="ans2" value="0" id="ans5"><label for="ans5">b.放電鍋保溫
+                  </label><br>
+                  <input type="radio" name="ans2" value="1" id="ans6"><label for="ans6">c.摸起來不燙手先放冰箱
+                  </label><br>
+                </FORM>
+              </div>
+
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2" id="sub2">
+                <a href="" data-toggle="modal" data-target="#myModal2">
+                  <button class="subbtn">送出</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--   問題3   -->
+        <div class="quiz">
+          <div class="quiz quiz3" id="quiz3" style="display:none">
+            <h3 style="font-weight:600">3.關於剩菜加熱哪個行為錯誤？</h3>
+
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-8">
+                <form><br>
+                  <input type="radio" name="ans3" value="0" id="ans7"><label for="ans7">a. 中心溫度達70℃以上，可消滅大部分病菌
+                  </label><br>
+                  <input type="radio" name="ans3" value="1" id="ans8"><label for="ans8">b. 使用微波爐可分段加熱，中途稍微翻攪</label><br>
+                  <input type="radio" name="ans3" value="0" id="ans9"><label for="ans9">c.隔夜菜可以加熱很多次
+                  </label><br>
+                </FORM>
+              </div>
+
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2" id="sub3">
+                <a href="" data-toggle="modal" data-target="#myModal3">
+                  <button class="subbtn">送出</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--   問題4   -->
+        <div class="quiz">
+          <div class="quiz quiz4" id="quiz4" style="display:none">
+            <h3 style="font-weight:600">4.您吃素食的時候會特別注意是否有攝取到鐵質(如:葡萄乾、豆類等)嗎?</h3>
+
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-8">
+                <form><br>
+                  <input type="radio" name="ans4" value="1" id="ans10"><label for="ans10">a. 會
+                  </label><br>
+                  <input type="radio" name="ans4" value="1" id="ans11"><label for="ans11">b.偶爾會注意</label><br>
+                  <input type="radio" name="ans4" value="0" id="ans12"><label for="ans12">c.從沒注意過
+                  </label><br>
+                </FORM>
+              </div>
+
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2" id="sub4">
+                <a href="" data-toggle="modal" data-target="#myModal4">
+                  <button class="subbtn">送出</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--   問題5   -->
+        <div class="quiz">
+          <div class="quiz quiz5" id="quiz5" style="display:none">
+            <h3 style="font-weight:600">5.吃素就等於一直吃蔬菜?</h3>
+
+            <div class="row">
+              <div class="col-sm-2">
+              </div>
+
+              <div class="col-sm-8">
+                <form><br>
+                  <input type="radio" name="ans2" value="0" id="ans13"><label for="ans13">a. 對!
+                  </label><br>
+                  <input type="radio" name="ans2" value="1" id="ans14"><label for="ans14">b.錯!</label><br>
+                </FORM>
+              </div>
+
+              <div class="col-sm-2">
+              </div>
+              <div class="col-sm-10">
+              </div>
+              <div class="col-sm-2" id="sub5">
+                <a href="" data-toggle="modal" data-target="#myModal5">
+                  <button class="subbtn">送出</button>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br><br><br>
+      <div class="select" id="select2">
+
+        <!--   隔夜菜小知識1   -->
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="https://github.com/2021Hackthon/icon/blob/gh-pages/salad.png?raw=true" alt="鴨子" style="width:80%">
+          </div>
+
+          <div class="col-sm-6">
+            <h1 style="font-weight:800">隔夜菜迷思</h1>
+            <ul class="ww">
+              <li>先行分裝可避免菜肴沾染到口水而增加細菌汙染風險。</li>
+              <li>食物冷藏最多1至2天，不要超過3天</li>
+
+            </ul>
+          </div>
+        </div>
+        <br><br><br><br>
+        <!--   隔夜菜小知識2   -->
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 style="font-weight:800">隔夜菜迷思</h1>
+            <ul class="ww">
+              <li>食物中毒通常夏天是高峰期，建議食物沒吃完一小時內要放進冰箱，以免變質。</li>
+              <li>食物冷藏最多1至2天，不要超過3天</li>
+              <li>食物降溫到不燙手就可放進冰箱</li>
+
+            </ul>
+          </div>
+
+          <div class="col-sm-6">
+            <img src="https://github.com/2021Hackthon/icon/blob/gh-pages/fridge.png?raw=true" alt="鴨子" style="width:80%">
+          </div>
+        </div>
+      </div>
+
+      <div class="select" id="select3">
+        <h1 style="font-weight:600">素食須知</h1>
+        <br>
+        <h3 style="font-weight:800">1.粗食原味少精緻，加工食品慎選食</h3>
+        <p class="ww">
+          素食的加工食品，製作過程中經常會添加食品添加物，以增加風味或口感，因此建議速食飲食應多選擇新鮮食材，少吃過度加工食品。
+        </p>
+        <h3 style="font-weight:800">2.烹調用油常變化，堅果種子不可少</h3>
+        <p class="ww">
+          (1)葵花油、大豆沙拉油、橄欖油在高溫中容易氧化，建議不要用來油炸食物。
+          <br>
+          (2)椰子油和棕櫚油雖然是植物油，其所含飽和脂肪酸卻比較高，會深高血液的膽固醇，不建議食用太多。
+          <br>
+          -->建議：考慮烹調方法後經常變換烹調用油。
+        </p>
+
+      </div>
+  </div>
+
+  <br><br><br>
+  </div>
+
+  <!-- 答案框框1  -->
+  <div class="modal fade" id="myModal1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="outside"></div>
+        <div class="inside">
+          <!-- Modal 標題 -->
+          <div class="modal-header">
+            <h2 class="modal-title">1.解答</h2>
+            <!-- X 表示關掉 -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal 內容 就正常Html怎麼寫就好 -->
+          <div class="modal-body">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div id="yes1" style="display:none">
+                  <h3>O 恭喜你！觀念正確</h3>
+                  <p>食物當天或隔天就解決當然是最好啦</p>
+                  <h4><b>貼心提醒</b></h4>
+                  <p>料理過的食材冷藏<b>最多1至2天</b>，不要超過3天</p>
+                  <p>菜餚可先行分裝，避免菜肴沾染到口水而增加細菌汙染風險。</p>
+                </div>
+
+                <div id="no1" style="display:none">
+                  <h3>X 注意！你需要改變一下習慣</h3>
+                  <p>3-4天的保存間太久了，冰箱的冷藏只能抑菌，並無法滅菌</p>
+                  <h4>貼心提醒</h4>
+                  <p>料理過的食材冷藏<b>最多1至2天</b>，不要超過3天</p>
+                  <p>菜餚可先行分裝，避免菜肴沾染到口水而增加細菌汙染風險。</p>
+                </div>
+
+                <div id="mid1" style="display:none">
+                  <h3>你忘記選答案囉～</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 了解更多 -->
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 答案框框2  -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="outside"></div>
+        <div class="inside">
+          <!-- Modal 標題 -->
+          <div class="modal-header">
+            <h2 class="modal-title">2.解答</h2>
+            <!-- X 表示關掉 -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal 內容 就正常Html怎麼寫就好 -->
+          <div class="modal-body">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div id="yes2" style="display:none">
+                  <h3>O 恭喜你！觀念正確</h3>
+                  <p>料理好菜肴放於室溫，<b>降溫到不燙手</b>就可放進冰箱，(快速降溫到7℃以下才)能有效抑制細菌滋長。
+                  </p>
+                  <h4><b>貼心提醒</b></h4>
+                  <p>食物中毒通常夏天是高峰期，建議食物沒吃完一小時內要放進冰箱，以免變質。</p>
+                </div>
+
+                <div id="no2" style="display:none">
+                  <h3>X 注意！你需要改變一下習慣</h3>
+                  <p>為了方便把食物放在電鍋中保溫不太好，因電鍋在保溫狀態下溫度低於60℃，如同在培養細菌</p>
+                  <h4>貼心提醒</h4>
+                  <p>建議還是要<b>冷藏</b>，食用前再復熱。</p>
+                </div>
+
+                <div id="mid2" style="display:none">
+                  <h3>你忘記選答案囉～</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 了解更多 -->
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 答案框框3  -->
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="outside"></div>
+        <div class="inside">
+          <!-- Modal 標題 -->
+          <div class="modal-header">
+            <h2 class="modal-title">3.解答</h2>
+            <!-- X 表示關掉 -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal 內容 就正常Html怎麼寫就好 -->
+          <div class="modal-body">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div id="yes3" style="display:none">
+                  <h3>O 恭喜你！觀念正確</h3>
+                  <p>沒錯！復熱以一次為宜，不宜反覆加熱</p>
+                  <h4>貼心提醒</h4>
+                  <p>剩菜或隔夜菜再加熱時，中心溫度須達70℃以上，可消滅大部分病菌。</p>
+                </div>
+
+                <div id="no3" style="display:none">
+                  <h3>X 注意！你觀念有點錯誤哦</h3>
+
+                  <p>剩菜或隔夜菜再復熱時，中心溫度須達70℃以上，可消滅大部分病菌。</p>
+                  <p>使用微波爐中途稍微翻攪，可讓受熱程度均勻。</p>
+
+                  <h4><b>貼心提醒</b></h4>
+                  <p>食物中毒通常夏天是高峰期，建議食物沒吃完一小時內要放進冰箱，以免變質。</p>
+                </div>
+
+                <div id="mid3" style="display:none">
+                  <h3>你忘記選答案囉～</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 了解更多 -->
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 答案框框4  -->
+  <div class="modal fade" id="myModal4">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="outside"></div>
+        <div class="inside">
+          <!-- Modal 標題 -->
+          <div class="modal-header">
+            <h2 class="modal-title">4.解答</h2>
+            <!-- X 表示關掉 -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal 內容 就正常Html怎麼寫就好 -->
+          <div class="modal-body">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div id="yes4" style="display:none">
+                  <h3>O 恭喜你！觀念正確</h3>
+                  <p> 不錯哦!要記得每日都要注意當天飲食情況!獲取足夠的營養哦
+
+                  </p>
+                  <h4><b>貼心提醒</b></h4>
+                  <p>成年男子/更年期後女生 每日建議要獲取12公克的鐵</p>
+                </div>
+
+                <div id="no4" style="display:none">
+                  <h3>X 注意！你需要改變一下習慣</h3>
+                  <p>若沒有攝取到足夠的鐵質，容易造成缺鐵性貧血喔!
+                  </p>
+                  <h4>貼心提醒</h4>
+                  <p>成年男子/更年期後女生 每日建議要獲取12公克的鐵</p>
+                </div>
+
+                <div id="mid4" style="display:none">
+                  <h3>你忘記選答案囉～</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 了解更多 -->
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 答案框框5  -->
+  <div class="modal fade" id="myModal5">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="outside"></div>
+        <div class="inside">
+          <!-- Modal 標題 -->
+          <div class="modal-header">
+            <h2 class="modal-title">5.解答</h2>
+            <!-- X 表示關掉 -->
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal 內容 就正常Html怎麼寫就好 -->
+          <div class="modal-body">
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div id="yes5" style="display:none">
+                  <h3>O 恭喜你！答對啦</h3>
+                  <p> 素食者也要多注意營養均衡，多吃蛋白質、補鐵等食品!
+
+                  </p>
+                  <h4><b>貼心提醒</b></h4>
+                  <p>素食者更要注意營養的均衡，多補充蛋白質、鐵等營養!
+                    也要注意食物的多樣性喔!!
+                  </p>
+                </div>
+
+                <div id="no5" style="display:none">
+                  <h3>X 注意！你需要改變一下習慣</h3>
+                  <p>其實吃太多蔬菜也會吃出健康問題，容易造成營養不均衡!
+
+                  </p>
+                  <h4>貼心提醒</h4>
+                  <p>素食者更要注意營養的均衡，多補充蛋白質、鐵等營養!
+                    也要注意食物的多樣性喔!!
+                  </p>
+                </div>
+
+                <div id="mid5" style="display:none">
+                  <h3>你忘記選答案囉～</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 了解更多 -->
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <button type="button" id="BackTop" class="toTop-arrow"></button>
+  <script>
+    $(function() {
+      $('#BackTop').click(function() {
+        $('html,body').animate({
+          scrollTop: 0
+        }, 333);
+      });
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+  </script>
+
+</body>
+</section>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

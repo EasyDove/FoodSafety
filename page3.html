@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>食載 - 用藥安全 - 謝榮益所架設</title>
+  <link rel="stylesheet" href="./page3Style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <span class="loader"></span>
+    <span class="word">加 載 中</span>
+  </div>
+  <script>
+    $(window).on("load", function() {
+      $(".loader-wrapper").fadeOut("slow");
+    });
+  </script>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+    <a class="navbar-brand" href="index.html"><img src="https://github.com/2021Hackthon/logo1/blob/gh-pages/logo.png?raw=true
+" height="50px">
+      <span class="iconname">食載</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="page1.html">食物放大鏡</a>
+        </li>
+
+        <!-- Dropdown -->
+                <li class="nav-item">
+          <a class="nav-link" href="page2.html">飲食迷思</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" style="color:orange" data-toggle="dropdown">
+            用藥安全
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#select2">保健食品？</a>
+            <a class="dropdown-item" href="#select3">聽醫生的話</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!--  RWD網站排版  -->
+  <div class="container">
+    <section id="h4.html">
+      <div class="title">
+        用藥安全
+        <div class="con">
+          <i class="fa fa-plus-square" id="plus"></i>
+          <i class="fa fa-plus-square" id="plus"></i>
+          <i class="fa fa-plus-square" id="plus"></i>
+        </div>
+      </div>
+
+      <div class="select" id="select2">
+        <h1 style="font-weight:800">保健食品？</h1>
+        <hr>
+        <!--   隔夜菜小知識1   -->
+        <div class="row" data-aos="fade-left">
+          <div class="col-sm-6">
+            <img src="https://github.com/2021Hackthon/icon/blob/gh-pages/medicine.png?raw=true" alt="鴨子" style="width:80%">
+          </div>
+
+          <div class="col-sm-6">
+            <br>
+            <br>
+            <h3>1.藥物濫用始終是罹患腎臟病的隱憂。
+              <br>
+              <br>
+              2.保健食品可能含有傷腎成分，但更多的是誇大效果
+              <br>
+              <br>
+              3.小心用藥別亂吃，有病就去看醫生
+              <br>
+              <br>
+            </h3>
+          </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="select" id="select3">
+          <h1 style="font-weight:800">聽醫生的話</h1>
+          <hr>
+          <h4><br>
+            不論在藥局買藥或是醫師開藥，<br><br>一定要保留藥袋和藥盒，<br><br>上面會有藥名、適應症、劑量、有效期限等重要資訊，<br><br>若吃出問題也能縮短找出原因的時間。<br><br>若自己買藥吃，約一週仍不見好轉，則建議盡快就醫。</h4>
+          <br>
+        </div>
+        <br><br><br>
+      </div>
+
+      <!-- 答案框框1  -->
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="outside"></div>
+            <div class="inside">
+              <!-- Modal 標題 -->
+              <div class="modal-header">
+                <h2 class="modal-title">解答 - 0001</h2>
+                <!-- X 表示關掉 -->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal 內容 就正常Html怎麼寫就好 -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="quiz quiz1" id="quiz1">
+                      <h1>1.您通常保存菜餚會保存多久呢?
+                      </h1>
+
+                      <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+
+                        <div class="col-sm-7"><br>
+                          <div>正解：不曉得？</div>
+
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div id="yes1" style="display:none">
+                      <h3>恭喜！</h3>
+                      <p>你很棒！！</p>
+                      <p>評價：＊＊＊＊＊</p>
+                      <p>你很棒！！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;你很棒！！</p>
+                    </div>
+
+                    <div id="no1" style="display:none">
+                      <h3>答錯囉ＱＱ</h3>
+                      <p>你可以的～～</p>
+                      <p>評價：加油！再多努力一點</p>
+                      <p>加油！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;小心錯誤觀念唷～</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 了解更多 -->
+              <div class="modal-footer">
+                <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 答案框框2  -->
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="outside"></div>
+            <div class="inside">
+              <!-- Modal 標題 -->
+              <div class="modal-header">
+                <h2 class="modal-title">解答 - 0002</h2>
+                <!-- X 表示關掉 -->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal 內容 就正常Html怎麼寫就好 -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="quiz quiz2" id="quiz2">
+                      <h1>2.保存多久呢?
+                      </h1>
+
+                      <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+
+                        <div class="col-sm-7"><br>
+                          <div>正解：不曉得？</div>
+
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div id="yes2" style="display:none">
+                      <h3>恭喜！</h3>
+                      <p>你很棒！！</p>
+                      <p>評價：＊＊＊＊＊</p>
+                      <p>你很棒！！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;你很棒！！</p>
+                    </div>
+
+                    <div id="no2" style="display:none">
+                      <h3>答錯囉ＱＱ</h3>
+                      <p>你可以的～～</p>
+                      <p>評價：加油！再多努力一點</p>
+                      <p>加油！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;小心錯誤觀念唷～</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 了解更多 -->
+              <div class="modal-footer">
+                <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 答案框框3  -->
+      <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="outside"></div>
+            <div class="inside">
+              <!-- Modal 標題 -->
+              <div class="modal-header">
+                <h2 class="modal-title">解答 - 0003</h2>
+                <!-- X 表示關掉 -->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal 內容 就正常Html怎麼寫就好 -->
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="quiz quiz3" id="quiz3">
+                      <h1>3.多久呢?
+                      </h1>
+
+                      <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+
+                        <div class="col-sm-7"><br>
+                          <div>正解：不得？</div>
+
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div id="yes3" style="display:none">
+                      <h3>恭喜！</h3>
+                      <p>你很棒！！</p>
+                      <p>評價：＊＊＊＊＊</p>
+                      <p>你很棒！！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;你很棒！！</p>
+                    </div>
+
+                    <div id="no3" style="display:none">
+                      <h3>答錯囉ＱＱ</h3>
+                      <p>你可以的～～</p>
+                      <p>評價：加油！再多努力一點</p>
+                      <p>加油！</p>
+                      <h4>小語</h4>
+                      <p>&emsp;&emsp;小心錯誤觀念唷～</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 了解更多 -->
+              <div class="modal-footer">
+                <button type="button" class="btn-secondary" data-dismiss="modal">了解</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <button type="button" id="BackTop" class="toTop-arrow"></button>
+      <script>
+        $(function() {
+          $('#BackTop').click(function() {
+            $('html,body').animate({
+              scrollTop: 0
+            }, 333);
+          });
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 300) {
+              $('#BackTop').fadeIn(222);
+            } else {
+              $('#BackTop').stop().fadeOut(222);
+            }
+          }).scroll();
+        });
+      </script>
+</body>
+</section>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
